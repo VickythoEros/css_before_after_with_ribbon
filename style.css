@@ -1,0 +1,120 @@
+/* Styles pour le titre principal */
+h1 {
+  color: red;
+  text-align: center;
+}
+
+/* Styles pour le conteneur principal */
+.container {
+  margin: auto;
+  width: 80%; /* Ajouté pour centrer et limiter la largeur du conteneur */
+}
+
+/* Styles pour la boîte à l'intérieur du conteneur */
+.container .box {
+  width: 500px;
+  height: 600px;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  margin: auto;
+  position: relative;
+}
+
+/* Styles pour le ruban */
+.container .box .ribbon {
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  width: 105px;
+  height: 105px;
+}
+
+/* Styles pour le texte dans le ruban */
+.container .box .ribbon span {
+  font-size: 10px;
+  font-weight: bolder;
+  color: #ffffff;
+  background: linear-gradient(#142864 0%, #142864 100%);
+  text-transform: uppercase;
+  line-height: 20px;
+  text-align: center;
+  width: 121px;
+  display: block;
+  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+  position: absolute;
+  padding: 4px;
+  transform: rotate(45deg);
+}
+
+
+.container .box .ribbon span::before,
+.container .box .ribbon span::after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  z-index: -1;
+}
+
+
+/* style after et before pour bottom */
+.spanTop::before{
+  left: 0;
+  top: 100%;
+  border-left: 3px solid #142864;
+  border-top: 3px solid #142864;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+}
+.spanTop::after{
+  right: 0;
+  top: 100%;
+  border-left: 3px solid transparent;
+  border-top: 3px solid #142864;
+  border-right: 3px solid #142864;
+  border-bottom: 3px solid transparent;
+}
+
+
+.spanBottom::before{
+  right: 0;
+  bottom: 100%;
+  border-left: 3px solid transparent;
+  border-top: 3px solid transparent;
+  border-right: 3px solid #142864;
+  border-bottom: 3px solid #142864;
+}
+.spanBottom::after{
+  left: 0;
+  bottom: 100%;
+  border-left: 3px solid #142864;
+  border-top: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid #142864;
+}
+
+/* Styles pour les boutons radio */
+input[type="radio"] {
+  margin-right: 8px;
+}
+
+/* Styles pour les labels */
+label {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Styles pour le conteneur de positions */
+.positions {
+  margin: 2rem auto;
+  width: 80%; /* Ajouté pour centrer et limiter la largeur du conteneur */
+}
+
+/* Styles pour les éléments à l'intérieur du conteneur de positions */
+.positions .items {
+  display: flex;
+  gap: 25px;
+}

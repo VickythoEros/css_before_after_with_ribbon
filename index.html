@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS BEFORE AFTER PROPERTIES</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Ruban</h1>
+    <form class="options">
+       <div class="positions">
+        <h2>Positionnement</h2>
+        <div class="items">
+         <div class="input_container">
+            <input id="radio_top_left" name="position" value="topLeft" type="radio" checked />
+            <label for="radio_top_left">En haut à gauche</label>
+        </div>
+        <div class="input_container">
+            <input id="radio_top_right"  name="position" value="topRight"  type="radio" />
+            <label for="radio_top_right">En haut à droite</label>
+        </div>
+        <div class="input_container">
+            <input id="radio_bottom_left"  name="position" value="bottomLeft" type="radio" />
+            <label for="radio_bottom_left">En bas à gauche</label>
+        </div>
+        <div class="input_container">
+            <input id="radio_bottom_right" value="bottomRight" name="position"  type="radio" />
+            <label for="radio_bottom_right">En bas à droite</label>
+        </div>
+        </div>
+       </div>
+    </form>
+    <div class="container">
+      <div class="box">
+        <div class="ribbon" id="ribbon">
+          <span id="span_ribbon">ruban</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
